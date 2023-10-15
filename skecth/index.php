@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -6,16 +7,16 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap&subset=japanese" rel="stylesheets">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <?php wp_head(); ?>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="site">
-                <img src="" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/w.svg?<?php echo date("YmdHis");?>" alt="" />
                 <div>
-                    <p>テストカンパニー</p>
-                    <p>確かなサポート</p>
+                    <p class="corp">テストカンパニー</p>
+                    <p class="desc">確かなサポート</p>
                 </div>
             </div>
 
@@ -27,7 +28,7 @@
                 </ul>
             </nav>
 
-            <button type="button" class="nav-button">
+            <button type="button" class="nav-button" onClick="navFunc()">
                 <span class="sr-only">MENU</span>
             </button>
         </div>
@@ -35,10 +36,12 @@
 
     <section class="hero">
         <div class="catch">
-            <h1>
-                <img src="" alt="">
-            </h1>
-            <p>お仕事を支えます</p>
+            <div class="container">
+                <h1>
+                    <img src="" alt="">
+                </h1>
+                <p>裏方としてお仕事を支えます</p>
+            </div>
         </div>
     </section>
 
@@ -121,5 +124,11 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        function navFunc(){
+            document.querySelector('html').classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
