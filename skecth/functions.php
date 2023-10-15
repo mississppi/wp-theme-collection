@@ -1,7 +1,7 @@
 <?php
 
-function mytheme_setup(){
-    
+function theme_setup(){
+
 }
 
-add_action('after_setup_theme', 'setup');
+add_action('after_setup_theme', 'theme_setup');
