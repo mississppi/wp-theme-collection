@@ -24,7 +24,7 @@
             <p>私たちにできること</p>
 
             <div class="details">
-                <article class="detail office">
+                <article class="detail develop">
                     <figure></figure>
                     <h3>開発業務<br>サポート</h3>
                     <p>開発プロジェクトをバックアップいたします。設計、実装、テストなどさまざまな開発業務をサポートいたします。また、多言語でのサポートを提供いたします。</p>
@@ -38,7 +38,7 @@
                     <a href="#" class="btn" >MANAGEMENT</a>
                 </article>
 
-                <article class="detail office">
+                <article class="detail research">
                     <figure></figure>
                     <h3>調査・研究<br>サポート</h3>
                     <p>各種事業の立ち上げ、運営にかかわる調査・研究のサポートや、特定分野の専門家との提携のお手伝いなどを行います。</p>

@@ -367,8 +367,16 @@ a:hover {
     background-size: cover;
 }
 
+.detail.develop figure {
+    background-image: url(assets/images/develop.jpg);
+}
+
 .detail.office figure {
-    background-image: url(assets/images/sg.svg);
+    background-image: url(assets/images/office.jpg);
+}
+
+.detail.research figure {
+    background-image: url(assets/images/research.jpg);
 }
 
 @media (min-width: 900px) {
