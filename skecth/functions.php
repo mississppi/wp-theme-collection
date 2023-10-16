@@ -1,6 +1,9 @@
 <?php
 
+//テーマへの処理
 function theme_setup(){
+    //タイトル出力
+    add_theme_support('title-tag');
 
     // HTML5対応
     add_theme_support('html5', ['style', 'script']);
@@ -8,7 +11,6 @@ function theme_setup(){
 add_action('after_setup_theme', 'theme_setup');
 
 function theme_enqueue() {
-    
     //
     wp_enqueue_style('skecth-style', get_stylesheet_uri(), [], filemtime(get_template_directory() . '/style.css'));
 }
